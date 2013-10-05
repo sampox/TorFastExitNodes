@@ -16,7 +16,7 @@ NoDoubles = list(OrderedDict.fromkeys(ip))
 # ignore first IP found, it's always ours
 for i in range(1,21):
 	x=NoDoubles[i]
-	# ignore the regex mistakes (addresses that ones that start with 0)
+	# ignore the regex mistakes (addresses that start with 0)
 	if(x[0]!=0 and x[0]!='0'):
 		print x
 
